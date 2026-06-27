@@ -28,4 +28,18 @@ jobs:
         run: bun install --frozen-lockfile --ignore-scripts
 
       - name: Verify commit messages
-        run: bun run lint:commit
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            FROM="${{ github.event.pull_request.base.sha }}"
+            TO="${{ github.event.pull_request.head.sha }}"
+          else
+            FROM="${{ github.event.before }}"
+            TO="${{ github.sha }}"
+          fi
+          # On the first push to a branch the "before" sha is all zeros,
+          # so fall back to linting only the latest commit.
+          if echo "$FROM" | grep -qE '^0+$'; then
+            bun run lint:commit -- --last
+          else
+            bun run lint:commit -- --from "$FROM" --to "$TO"
+          fi
