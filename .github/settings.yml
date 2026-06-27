@@ -5,13 +5,13 @@ repository:
 
   homepage: https://interc3pt.ee/
 
-  topics: landing-page, interc3pt, react, react19, typescript, vite, tailwindcss, shadcn-ui, bun, estonia, ai-automation
+  topics: landing-page, interc3pt, estonia, automation
 
-  private: true
+  private: false
 
   has_issues: true
 
-  has_projects: true
+  has_projects: false
 
   has_wiki: false
 
@@ -25,7 +25,7 @@ repository:
 
   allow_rebase_merge: true
 
-  delete_branch_on_merge: true
+  delete_branch_on_merge: false
 
 labels:
   - name: bug
