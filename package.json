@@ -54,5 +54,6 @@
     "semantic-release": "^25.0.5",
     "typescript": "~6.0.2",
     "vite": "^8.1.0"
-  }
+  },
+  "version": "1.0.0"
 }
