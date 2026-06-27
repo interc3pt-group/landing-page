@@ -1,0 +1,121 @@
+repository:
+  name: landing-page
+
+  description: Single-page landing site for Interc3pt, an AI-based automation company based in Tallinn, Estonia. Estonian copy, English source. Built with React 19, TypeScript, Vite, Tailwind CSS v4 and shadcn/ui.
+
+  homepage: https://interc3pt.ee/
+
+  topics: landing-page, interc3pt, react, react19, typescript, vite, tailwindcss, shadcn-ui, bun, estonia, ai-automation
+
+  private: true
+
+  has_issues: true
+
+  has_projects: true
+
+  has_wiki: false
+
+  has_downloads: true
+
+  default_branch: main
+
+  allow_squash_merge: true
+
+  allow_merge_commit: false
+
+  allow_rebase_merge: true
+
+  delete_branch_on_merge: true
+
+  enable_automated_security_fixes: true
+  
+  enable_vulnerability_alerts: true
+
+labels:
+  - name: bug
+    color: d73a4a
+    description: Something isn't working
+
+  - name: duplicate
+    color: cfd3d7
+    description: This issue or pull request already exists
+
+  - name: good first issue
+    color: 7057ff
+    description: Good for newcomers
+
+  - name: help wanted
+    color: 008672
+    description: Extra attention is needed
+
+  - name: invalid
+    color: e4e669
+    description: This doesn't seem right
+
+  - name: question
+    color: d876e3
+    description: Further information is requested
+
+  - name: wontfix
+    color: ffffff
+    description: This will not be worked on
+
+  - name: chore
+    color: fef3c7
+    description: Maintenance or housekeeping task
+
+  - name: fix
+    color: fc2929
+    description: A bug fix
+
+  - name: dependencies
+    color: 0366d6
+    description: Updates to dependencies
+
+  - name: spam
+    color: 6e6e6e
+    description: Spam or irrelevant content
+
+  - name: approved
+    color: 40a02b
+    description: Approved and ready to proceed
+
+  - name: blocked
+    color: d20f39
+    description: Blocked by something
+
+  - name: config
+    color: e6e9ef
+    description: Configuration change
+
+  - name: issue-bot
+    color: 8839ef
+    description: Created or managed by a bot
+
+  - name: style
+    color: f5c2e7
+    description: Code style or formatting
+
+  - name: component
+    color: b7bdf8
+    description: Component-level change
+
+  - name: ui-ux
+    color: f0c6c6
+    description: UI or UX improvement
+
+  - name: refactor
+    color: e5c890
+    description: Code refactoring
+
+  - name: perf
+    color: a6da95
+    description: Performance improvement
+
+  - name: build
+    color: 8aadf4
+    description: Build system change
+
+  - name: ci
+    color: 7dc4e4
+    description: Continuous integration change

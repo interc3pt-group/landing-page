@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Send an e-mail to the team
+    url: mailto:contact@interc3pt.ee
+    about: Please do NOT use this email to post issues or feature requests (only important business/personal contact).
+  - name: Security vulnerability
+    url: https://github.com/interc3pt/landing-page/security/advisories/new
+    about: Report a critical vulnerability privately via GitHub Security Advisories. Do NOT open a public issue.
+  - name: Architecture & design questions
+    url: https://github.com/interc3pt/landing-page/discussions
+    about: Open-ended architecture discussions or questions about service boundaries.

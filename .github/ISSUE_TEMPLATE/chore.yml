@@ -1,0 +1,71 @@
+name: 🧹 Chore
+description: Maintenance, tooling, dependencies, refactor or other non-feature work
+title: 'chore: '
+labels: ['chore']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for housekeeping tasks that aren't bugs or user-facing features — dependency bumps, tooling, config, refactors, docs, CI, etc.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What kind of chore is this?
+      options:
+        - Dependencies
+        - Tooling / config (oxlint, lint-staged, commitizen, etc.)
+        - Refactor
+        - Documentation
+        - CI / CD
+        - Build
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done and why?
+      placeholder: Upgrade Tailwind to v4.x and migrate the affected tokens.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this worth doing? What problem does it solve or prevent?
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Break the work into actionable items.
+      value: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links, references, or anything else that helps.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate.
+          required: true
+        - label: This change does not introduce user-facing behavior changes (otherwise use a Bug or Feature template).
+          required: false

@@ -1,0 +1,99 @@
+name: 🐛 Bug Report
+description: Report a problem or unexpected behavior in the Interc3pt landing page
+title: 'bug: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in the details below so we can reproduce and fix it quickly.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: When I do X, Y happens instead of Z.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce the behavior?
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: If applicable, add screenshots or a screen recording to help explain the problem.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      description: Which theme were you using when the bug occurred?
+      options:
+        - Light
+        - Dark
+        - System
+        - Not relevant
+    validations:
+      required: false
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      description: Where did you encounter the bug?
+      options:
+        - Desktop
+        - Mobile
+        - Tablet
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & version
+      description: e.g. Chrome 126, Firefox 128, Safari 17
+      placeholder: Chrome 126
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate.
+          required: true
+        - label: I can reproduce this issue consistently.
+          required: false

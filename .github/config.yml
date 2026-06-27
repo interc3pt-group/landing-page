@@ -1,0 +1,33 @@
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+# Comment to be posted to on first time issues
+newIssueWelcomeComment: >
+  Thanks for opening your first issue here! 👋 A contributor should be by to give feedback soon.
+  In the meantime, please check out our [contributing guidelines](CONTRIBUTING.md) and feel free to explore the project.
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+# Comment to be posted to on PRs from first time contributors in your repository
+newPRWelcomeComment: >
+  Thanks for opening your first pull request! 🎉 A contributor should be by to give feedback soon.
+  Please make sure your PR follows our [contributing guidelines](CONTRIBUTING.md).
+
+# Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
+# Comment to be posted to on pull requests merged by a first time user
+firstPRMergeComment: >
+  Congrats on your first merged pull request! 🚀 Thanks for contributing to Interc3pt!
+
+# Configuration for request-info - https://github.com/behaviorbot/request-info
+# Comment to reply with
+requestInfoReplyComment: >
+  Thanks for opening this! We'd appreciate a little more information to help us address it properly. Could you update it with more details?
+
+# Configuration for sentiment-bot - https://github.com/behaviorbot/sentiment-bot
+
+# *Required* toxicity threshold between 0 and .99 with the higher numbers being the most toxic
+# Anything higher than this threshold will be marked as toxic and commented on
+sentimentBotToxicityThreshold: .9
+
+# *Required* Comment to reply with
+sentimentBotReplyComment: >
+  Please be sure to review our code of conduct and be respectful of other contributors.

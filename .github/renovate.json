@@ -1,0 +1,65 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Dependency Update Dashboard",
+  "description": "Automated dependency updates for all workspace packages.",
+  "enabledManagers": [
+    "bun",
+    "github-actions"
+  ],
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":semanticCommits"
+  ],
+  "schedule": [
+    "before 6am on weekdays"
+  ],
+  "commitMessageScope": "deps",
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "separateMajorMinor": true,
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "description": "Use Bun as the only dependency manager for updates.",
+      "enabled": true,
+      "matchManagers": [
+        "bun"
+      ]
+    },
+    {
+      "description": "Enable updates for all supported dependency types.",
+      "enabled": true,
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "optionalDependencies"
+      ]
+    },
+    {
+      "description": "Automerge patch and minor updates that pass CI.",
+      "automerge": true,
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ]
+    },
+    {
+      "description": "Pin major Node.js and Bun engine bumps as separate PRs requiring manual review.",
+      "automerge": false,
+      "matchPackageNames": [
+        "node",
+        "bun"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "separateMultipleMajor": true
+    }
+  ]
+}
