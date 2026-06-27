@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "cz": "git-cz",
     "preview": "vite preview",
-    "prepack": "husky",
+    "prepare": "husky",
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run",
     "lint:commit": "commitlint --verbose"
