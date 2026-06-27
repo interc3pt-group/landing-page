@@ -1,5 +1,16 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+
+## [1.0.1](https://github.com/interc3pt-group/landing-page/compare/v1.0.0...v1.0.1) (2026-06-27)
+
+### 🐛 Bug Fixes
+
+* install husky via prepare script and mark pre-commit executable ([86645a6](https://github.com/interc3pt-group/landing-page/commit/86645a6eea10293b4eb245fa7d24ecf87853f362))
+
+# Changelog
+
 All notable changes to this project will be documented in this file
 
 ## 1.0.0 (2026-06-27)
