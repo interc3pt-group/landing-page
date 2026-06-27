@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.0.2](https://github.com/interc3pt-group/landing-page/compare/v1.0.1...v1.0.2) (2026-06-27)
+
+### 🐛 Bug Fixes
+
+* **settings:** remove unsupported security alert fields ([b80ee57](https://github.com/interc3pt-group/landing-page/commit/b80ee5782ddd7fb2ec328dab76b58e763376fa7d))
+
 ## [1.0.1](https://github.com/interc3pt-group/landing-page/compare/v1.0.0...v1.0.1) (2026-06-27)
 
 ### 🐛 Bug Fixes
